@@ -1,0 +1,12 @@
+{
+  "name": "paiza",
+  "version": "1.0.0",
+  "main": "execute",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node main/script.js",
+    "build": "node src/build.js",
+    "reset": "node src/init.js"
+  }
+}
