@@ -10,5 +10,3 @@ reader.on('close', () => {
   //処理
 
 });
-
-const clipboardy = require('clipboardy');
