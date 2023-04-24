@@ -8,6 +8,6 @@ let input = fs.readFileSync('main/input.txt', 'utf-8').split("\\n");
 
 fs.writeFileSync('main/script.js',  OutputText);
 fs.writeFileSync('main/input.txt',  '');
-fs.writeFileSync('main/output.js',  '');
+fs.unlinkSync('main/output.js');
 
 console.log("初期化しました");
