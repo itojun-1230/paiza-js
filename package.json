@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "execute",
   "license": "MIT",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "start": "node main/script.js",
     "build": "node src/build.js",

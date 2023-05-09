@@ -1,8 +1,8 @@
-import fs from 'fs';
+const fs = require("fs");
 
 const OutputText = 
-`import fs from "fs";
-const Input = fs.readFileSync("main/Input.txt", "utf8").trim().split("\\n");
+`const Input = require("fs").readFileSync("main/input.txt", "utf8").trim().split("\n");
+
 `;
 
 fs.writeFileSync('main/script.js',  OutputText);
