@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 const OutputText = 
-`const Input = require("fs").readFileSync("main/input.txt", "utf8").trim().split("\n");
+`const Input = require("fs").readFileSync("main/input.txt", "utf8").trim().split("\\n");
 
 `;
 
