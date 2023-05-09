@@ -1,10 +1,10 @@
 import fs from 'fs';
 
 const OutputText = 
-`import fs from 'fs';
-let input = fs.readFileSync('main/input.txt', 'utf-8').split("\\n");
-
-`;
+`const Main = () => {
+  
+} 
+ Main(require("fs").readFileSync("main/input.txt", "utf8").trim().split("\\n"));`;
 
 fs.writeFileSync('main/script.js',  OutputText);
 fs.writeFileSync('main/input.txt',  '');
