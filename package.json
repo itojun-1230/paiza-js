@@ -7,6 +7,6 @@
   "scripts": {
     "start": "node main/script.js",
     "build": "node src/build.js",
-    "reset": "node src/init.js"
+    "reset": "node src/reset.js"
   }
 }
