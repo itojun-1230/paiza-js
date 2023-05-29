@@ -30,6 +30,27 @@ const ShellSort = (arr, sort = true) => {  //数列をシェルソートする s
 
     return Arr;
 }
+const BinarySearch = ( arr, data ) => { //引数arrのdataのindexを返す二分探索関数 見つからなかった場合-1を返す
+    let max = arr.length;
+    let min = 0;
+
+    let res = -1;
+    while(max >= min) {
+        const Mid = Math.floor(( max + min ) / 2);
+
+        if( arr[Mid] < data ) {
+
+            min = Mid + 1;
+        }else if(arr[Mid] > data) {
+
+            max = Mid - 1;
+        }else if(arr[Mid] == data){
+            res = Mid;
+            break;
+        }
+    }
+    return res;
+}
 
 const Main = ( input ) => {
 
